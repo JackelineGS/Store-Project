@@ -1,0 +1,16 @@
+.logoDev {
+    display: flex;
+    position: relative;
+    display: block;
+    width: 30%;
+    height: 90%;
+    margin-right: 30px;
+    object-fit: contain;
+    justify-content:start;
+    align-items: center;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-image: url('../assets/myPortfolio.png');
+  
+  }
