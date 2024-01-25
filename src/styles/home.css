@@ -12,5 +12,106 @@
     background-size:contain;
     background-repeat: no-repeat;
     background-image: url('../assets/myPortfolio.png');
-  
   }
+
+  header {
+    display: flex;
+    background-color: #1F5273;
+    height: 100px;  
+    justify-content: center;
+  }
+
+  footer {
+    display: flex;
+    background-color: #1F5273;
+    height: 200px;
+    justify-content: center;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+
+  .bar {
+    display: flex;
+    padding: 10px;
+    width: 60%;
+    align-items: center;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-style: solid;
+    border-color: #1F5273;
+    border-width: 1px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin: 1.5%;
+    flex: auto;
+    max-height: 500px;
+    max-width: 430px;
+    padding: 10px;
+}
+
+.card-body-img{
+  display: flex;
+  overflow: hidden;
+  height: 300px;
+  background-color: #fff;
+}
+
+.poster {
+  width: auto;
+  height: auto;
+}
+
+.card-body-text {
+  display: flex;
+  height: 160px;
+  width: 100%;
+  flex-direction: column;
+  background-color: #1F5273;
+}
+
+.card-title {
+  font-size: 17px;
+  margin: 5px;
+}
+
+.card-body-text span {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.button-info {
+  display: absolute;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-top: auto;
+  border-radius: 4px;
+  border: 0px;
+  width: 130px;
+  transition: background-color .1s;
+}
+
+.button:hover {
+  background-color: rgb(204, 204, 204);
+}
