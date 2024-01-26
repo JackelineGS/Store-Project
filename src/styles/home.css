@@ -41,7 +41,10 @@
     border: none;
   }
 
-  
+  .bHome:hover, .bNosotros:hover, .bTienda:hover, .bPromociones:hover, .bContacto:hover {
+    background-color: #1F5273;
+    color: #fff;
+  }
 
   footer {
     display: flex;
@@ -67,6 +70,8 @@
     width: 60%;
     align-items: center;
     align-content: center;
+    pointer-events: all;
+    cursor: pointer;
   }
 
   .content {
