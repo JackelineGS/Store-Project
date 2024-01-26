@@ -93,8 +93,8 @@ const home = (navigateTo) => {
                 </div>
                 <div class="card-body-text">
                     <h5 class="card-title">${producto.title}</h5>
-                    <span class="año">Año: ${producto.price}</span>
-                    <span class="score">Score: ${producto.category}</span>
+                    <span class="año">Precio: ${producto.price}</span>
+                    <span class="score">Categoría: ${producto.category}</span>
                     <button name="button" class="button-info" data-id="${producto.id}">Añadir al carrito</button>
                 </div>
             </div>

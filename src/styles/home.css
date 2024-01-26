@@ -1,4 +1,10 @@
-.logoDev {
+  /*font-family: 'Barlow', sans-serif;*/
+  
+  body {
+    font-family: 'Barlow', sans-serif;
+  }
+  
+  .logoDev {
     display: flex;
     position: relative;
     display: block;
@@ -16,10 +22,26 @@
 
   header {
     display: flex;
-    background-color: #1F5273;
+    background-color: #fff;
     height: 100px;  
     justify-content: center;
   }
+
+  .bHome, .bNosotros, 
+  .bTienda, .bPromociones, 
+  .bContacto {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700; 
+    font-size: 18px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin: 10px;
+    height: 50px;
+    width: 150px;
+    border: none;
+  }
+
+  
 
   footer {
     display: flex;
@@ -44,6 +66,7 @@
     padding: 10px;
     width: 60%;
     align-items: center;
+    align-content: center;
   }
 
   .content {
