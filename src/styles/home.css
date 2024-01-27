@@ -27,6 +27,23 @@
     justify-content: center;
   }
 
+  .logoDev {
+    display: flex;
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 90px;
+    object-fit: contain;
+    align-items: center;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin: 0;
+    background-image: url('../assets/firstLogo.PNG');
+  
+  }
+
+
   .bHome, .bNosotros, 
   .bTienda, .bPromociones, 
   .bContacto {
@@ -42,7 +59,7 @@
   }
 
   .bHome:hover, .bNosotros:hover, .bTienda:hover, .bPromociones:hover, .bContacto:hover {
-    background-color: #1F5273;
+    background-color: #C91959;
     color: #fff;
   }
 
@@ -77,6 +94,8 @@
   .content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding-top: 20px;
   }
 
   .card {
@@ -85,8 +104,8 @@
     align-items: center;
     background-color: #fff;
     border-style: solid;
-    border-color: #1F5273;
-    border-width: 1px;
+    border-color: #C91959;
+    border-width: 1.5px;
     color: #fff;
     position: relative;
     overflow: hidden;
@@ -95,6 +114,7 @@
     max-height: 500px;
     max-width: 430px;
     padding: 10px;
+    border-radius: 20px;
 }
 
 .card-body-img{
@@ -111,10 +131,10 @@
 
 .card-body-text {
   display: flex;
-  height: 160px;
+  height: 200px;
   width: 100%;
   flex-direction: column;
-  background-color: #1F5273;
+  align-items: center;
 }
 
 .card-title {
@@ -127,19 +147,29 @@
   margin-left: 5px;
 }
 
-.button-info {
+.buttonAdd {
   display: absolute;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
   margin-bottom: 10px;
-  margin-top: auto;
-  border-radius: 4px;
-  border: 0px;
-  width: 130px;
-  transition: background-color .1s;
+  margin-top: 15px;
+  border-radius: 20px;
+  border: none;
+  width: 200px;
+  height: 40px;
+  background-color: #cde745;
 }
 
 .button:hover {
   background-color: rgb(204, 204, 204);
+}
+
+.card-title, .price, .category {
+  color: black;
+  font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+
 }

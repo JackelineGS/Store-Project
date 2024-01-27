@@ -11,7 +11,7 @@ const home = (navigateTo) => {
     homeDiv.innerHTML = '';
     homeDiv.innerHTML += `
     <header>
-    
+    <div class='logoDev'></div>    
         <div class='bar'>
             <button class='bHome'>Home</butoon>
             <button class='bNosotros'>Nosotros</butoon>
@@ -21,6 +21,9 @@ const home = (navigateTo) => {
         </div>
     </header>
     <main class='homeMain'>
+    <div class='subtitle'> 
+      <p class='tituloProduct'>PRODUCTOS</p>
+    </div>
     <div class='content'>
     </div>
         
@@ -93,9 +96,9 @@ const home = (navigateTo) => {
                 </div>
                 <div class="card-body-text">
                     <h5 class="card-title">${producto.title}</h5>
-                    <span class="año">Precio: ${producto.price}</span>
-                    <span class="score">Categoría: ${producto.category}</span>
-                    <button name="button" class="button-info" data-id="${producto.id}">Añadir al carrito</button>
+                    <span class="price">Precio: ${producto.price}</span>
+                    <span class="category">Categoría: ${producto.category}</span>
+                    <button class="buttonAdd" data-id="${producto.id}">Añadir al carrito</button>
                 </div>
             </div>
             `
