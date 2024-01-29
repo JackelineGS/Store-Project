@@ -6,13 +6,14 @@ const tienda = (navigateTo) => {
     tiendaDiv.innerHTML = '';
     tiendaDiv.innerHTML += ` 
     <header>
-      <div class='barContact'>
-      <button class='bHome'>Home</butoon>
-      <button class='bNosotros'>Nosotros</butoon>
-      <button class='bTienda'>Tienda</butoon>
-      <button class='bPromociones'>Promociones</butoon>
-      <button class='bContacto'>Contactanos</butoon>
-      </div>
+    <div class='logoDev'></div>    
+    <div class='bar'>
+        <button class='bHome'>Home</butoon>
+        <button class='bNosotros'>Nosotros</butoon>
+        <button class='bTienda'>Tienda</butoon>
+        <button class='bPromociones'>Promociones</butoon>
+        <button class='bContacto'>Contactanos</butoon>
+    </div>
     </header>
     <main class='contactMain'>
       <div class='dContact'>

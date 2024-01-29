@@ -1,0 +1,69 @@
+body {
+    font-family: 'Barlow', sans-serif;
+  }
+  
+  .logoDev {
+    display: flex;
+    position: relative;
+    display: block;
+    width: 30%;
+    height: 90%;
+    margin-right: 30px;
+    object-fit: contain;
+    justify-content:start;
+    align-items: center;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-image: url('../assets/myPortfolio.png');
+  }
+
+  header {
+    display: flex;
+    background-color: #fff;
+    height: 100px;  
+    justify-content: center;
+  }
+
+  .logoDev {
+    display: flex;
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 90px;
+    object-fit: contain;
+    align-items: center;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin: 0;
+    background-image: url('../assets/firstLogo.PNG');
+  
+  }
+
+
+  .bHome, .bNosotros, 
+  .bTienda, .bPromociones, 
+  .bContacto {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700; 
+    font-size: 18px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin: 10px;
+    height: 50px;
+    width: 150px;
+    border: none;
+  }
+
+  .bHome:hover, .bNosotros:hover, .bTienda:hover, .bPromociones:hover, .bContacto:hover {
+    background-color: #C91959;
+    color: #fff;
+  }
+
+  footer {
+    display: flex;
+    background-color: #1F5273;
+    height: 200px;
+    justify-content: center;
+  }

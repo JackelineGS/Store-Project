@@ -6,20 +6,22 @@ const nosotros = (navigateTo) => {
     nosotrosDiv.innerHTML = '';
     nosotrosDiv.innerHTML += `
     <header>
-        <div class='barAbout'>
-            <button class='bHome'>Home</butoon>
-            <button class='bNosotros'>Nosotros</butoon>
-            <button class='bTienda'>Tienda</butoon>
-            <button class='bPromociones'>Promociones</butoon>
-            <button class='bContacto'>Contactanos</butoon>
-        </div>
+    <div class='logoDev'></div>    
+    <div class='bar'>
+        <button class='bHome'>Home</butoon>
+        <button class='bNosotros'>Nosotros</butoon>
+        <button class='bTienda'>Tienda</butoon>
+        <button class='bPromociones'>Promociones</butoon>
+        <button class='bContacto'>Contactanos</butoon>
+    </div>
     </header>
-    <main class='aboutMain'>
-        <div class='dAbout'>
-        <div class='dimg'>
-            <div class='imgDiv'>
-            <div class='dimagen'></div>
-            </div>
+    <main class='nosotrosMain'>
+        <div class='slogan'>
+            <p class='textoSlogan>
+                Encuentra todo desde tu tienda Online
+            </p>
+            <div class='imagenSlogan'></div>
+        </div>
         </div>
             <div class='aboutDescription'>
                 <div class='firstAbout'>

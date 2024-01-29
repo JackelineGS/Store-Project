@@ -6,13 +6,14 @@ const contactanos = (navigateTo) => {
     contactDiv.innerHTML = '';
     contactDiv.innerHTML += ` 
     <header>
-      <div class='barContact'>
+    <div class='logoDev'></div>    
+    <div class='bar'>
         <button class='bHome'>Home</butoon>
         <button class='bNosotros'>Nosotros</butoon>
         <button class='bTienda'>Tienda</butoon>
         <button class='bPromociones'>Promociones</butoon>
         <button class='bContacto'>Contactanos</butoon>
-      </div>
+    </div>
     </header>
     <main class='contactMain'>
       <div class='dContact'>
