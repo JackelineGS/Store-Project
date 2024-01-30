@@ -61,6 +61,111 @@ body {
     color: #fff;
   }
 
+  .nosotrosMain {
+    display: flex;
+  }
+
+  .sloganLogo {
+    display: flex;
+    position: relative;
+    display: block;
+    width: 60%;
+    height: 350px;
+    object-fit: contain;
+    align-items: center;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-image: url('../assets/intro.svg');
+  }
+
+  .logoMision {
+    display: flex;
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 150px;
+    object-fit: contain;
+    align-items: center;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-image: url('../assets/3d-mini-lego-cube.png');
+  }
+
+  .logoVision {
+    display: flex;
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 150px;
+    object-fit: contain;
+    align-items: center;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-image: url('../assets/3d-mini-house.png');
+  }
+
+  .slogan {
+    display: flex; 
+  }
+
+  .sloganText {
+    font-family: 'Merriweather', serif;
+    font-weight: 700; 
+    font-size: 70px;
+    width: 60%;
+    height: 100px;
+    margin: 0;
+  }
+
+  .titleBrand {
+    display: flex;
+  }
+
+  .nosotrosMain {
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    align-items: center;
+  }
+
+  .presentacion {
+    background-color: aqua;
+    width: 80%;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+  }
+
+  .titleBrand {
+    color:#C91959;
+  }
+
+
+  .valores, .mision, .vision {
+    display: flex;
+  }
+
+
+  .misionVision, .nosotrosContent {
+    background-color: red;
+    align-content: center;
+  }
+
+  .nosotrosContent {
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    align-content: center;
+    align-items: center;
+  }
+ 
+
+
+
+
   footer {
     display: flex;
     background-color: #1F5273;
