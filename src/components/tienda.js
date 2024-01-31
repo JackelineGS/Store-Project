@@ -2,6 +2,10 @@ const tienda = (navigateTo) => {
 
     const tiendaDiv = document.createElement('div');
     tiendaDiv.className = 'tiendaDiv'; 
+
+    fetch('https://fakestoreapi.com/products')
+    .then(res=>res.json())
+    .then(json=>console.log(json))
     
     tiendaDiv.innerHTML = '';
     tiendaDiv.innerHTML += ` 
@@ -15,22 +19,45 @@ const tienda = (navigateTo) => {
         <button class='bContacto'>Contactanos</butoon>
     </div>
     </header>
-    <main class='contactMain'>
-      <div class='dContact'>
-        <div class='divInfo'>
-          <p class='request'> Estoy buscando nuevas oportunidades de desarrollo de proyectos o colaboraciones.
-          Si tienes un proyecto en mente, estaré encantada de discutir tus necesidades 
-          y ver si puedo ayudarte a cumplir tus objetivos. Si te interesa comunicarte conmigo enviame un correo: 
-          </p>
-          <p class='correo'>jackeline.garcia.serna@gmail.com</p>
-          <a class='ancorLink' href='https://www.linkedin.com/in/jackeline-garcia-ramh/' target='_blank'  type='button'>LinkedIn</a>
-          <a class='ancorGit' href='https://github.com/JackelineGS' target='_blank' type='button'>GitHub</a>
-        </div>
-        <div class='contactImg'>
-        <div class='imgForest'></div>
-        </div>
-        </div>
+    <main class='tiendaMain'>
+    <div class='subtitle'> 
+      <p class='tituloProduct'>PRODUCTOS</p>
+    </div'>
+ 
+    <div class='content'>
+    </div>
+
+        
     </main>
+    <footer>
+    <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h4 class='footerTitle'>Información de contacto</h4>
+        <p class='footerDes'>
+          Dirección: 123 Main Street, Anytown, CA 12345
+          <br>
+          Teléfono: (555) 555-5555
+          <br>
+          Correo electrónico: storeall@example.com
+        </p>
+      </div>
+      <div class="col-md-6">
+        <h4 class='footerTitle'>Enlaces de interés</h4>
+        <ul>
+          <li class='footerDes'><a href="#">Política de privacidad</a></li>
+          <li class='footerDes'><a href="#">Términos de servicio</a></li>
+          <li class='footerDes'><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <p class='footerDes'>Copyright &copy; 2023 Ejemplo</p>
+      </div>
+    </div>
+  </div>
+    </footer> 
     `; 
 
     const bHome = tiendaDiv.querySelector('.bHome');
@@ -57,6 +84,45 @@ const tienda = (navigateTo) => {
     bContactanos.addEventListener('click', () => {
         navigateTo('/contactanos');
     });
+
+
+    function crearTarjetas (productos) {
+        const all = tiendaDiv.querySelector('.content');
+        all.innerHTML = '';
+        productos.forEach(producto => {
+            all.innerHTML += `
+            <div class="card">
+                <div class="card-body-img">
+                    <img class="poster" src="${producto.image}" alt="Imagen de la película"/>
+                </div>
+                <div class="card-body-text">
+                    <h5 class="card-title">${producto.title}</h5>
+                    <span class="price">Precio: ${producto.price}</span>
+                    <span class="category">Categoría: ${producto.category}</span>
+                    <button class="buttonAdd" data-id="${producto.id}">Añadir al carrito</button>
+                </div>
+            </div>
+            `
+        });
+    }
+
+    async function fetchData() {
+        try {
+          const response = await fetch("https://fakestoreapi.com/products");
+          if (response.ok) {
+            const products = await response.json();
+            console.log(products);
+            crearTarjetas(products);
+          } else {
+            console.log(response.status);
+          }
+        } catch (error) {
+          console.log(error);
+        }
+      }
+      
+      fetchData();
+     
 
     return tiendaDiv;
 }; 

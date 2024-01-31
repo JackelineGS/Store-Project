@@ -1,69 +1,197 @@
 body {
-    font-family: 'Barlow', sans-serif;
-  }
-  
-  .logoDev {
-    display: flex;
-    position: relative;
-    display: block;
-    width: 30%;
-    height: 90%;
-    margin-right: 30px;
-    object-fit: contain;
-    justify-content:start;
-    align-items: center;
-    background-position: center;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-image: url('../assets/myPortfolio.png');
-  }
+  font-family: 'Barlow', sans-serif;
+}
 
-  header {
-    display: flex;
-    background-color: #fff;
-    height: 100px;  
-    justify-content: center;
-  }
+header {
+  display: flex;
+  background-color: #fff;
+  height: 100px;  
+  justify-content: center;
+}
 
-  .logoDev {
-    display: flex;
-    position: relative;
-    display: block;
-    width: 100px;
-    height: 90px;
-    object-fit: contain;
-    align-items: center;
-    background-position: center;
-    background-size:contain;
-    background-repeat: no-repeat;
-    margin: 0;
-    background-image: url('../assets/firstLogo.PNG');
-  
-  }
+.logoDev {
+  display: flex;
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 90px;
+  object-fit: contain;
+  align-items: center;
+  background-position: center;
+  background-size:contain;
+  background-repeat: no-repeat;
+  margin: 0;
+  background-image: url('../assets/firstLogo.PNG');
+
+}
 
 
-  .bHome, .bNosotros, 
-  .bTienda, .bPromociones, 
-  .bContacto {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 700; 
-    font-size: 18px;
-    border-radius: 20px;
-    background-color: #fff;
-    margin: 10px;
-    height: 50px;
-    width: 150px;
-    border: none;
-  }
+.bHome, .bNosotros, 
+.bTienda, .bPromociones, 
+.bContacto {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700; 
+  font-size: 18px;
+  border-radius: 20px;
+  background-color: #fff;
+  margin: 10px;
+  height: 50px;
+  width: 150px;
+  border: none;
+}
 
-  .bHome:hover, .bNosotros:hover, .bTienda:hover, .bPromociones:hover, .bContacto:hover {
-    background-color: #C91959;
-    color: #fff;
-  }
+.bHome:hover, .bNosotros:hover, .bTienda:hover, .bPromociones:hover, .bContacto:hover {
+  background-color: #C91959;
+  color: #fff;
+}
 
-  footer {
-    display: flex;
-    background-color: #1F5273;
-    height: 200px;
-    justify-content: center;
-  }
+.bar {
+  display: flex;
+  padding: 10px;
+  width: 60%;
+  align-items: center;
+  align-content: center;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  padding-top: 20px;
+  width: 100%;
+  margin-left: 30px;
+}
+
+.tiendaMain {
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-style: solid;
+  border-color: #C91959;
+  border-width: 1.5px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  margin: 3.5%;
+  flex: auto;
+  max-height: 500px;
+  max-width: 430px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.card-body-img{
+display: flex;
+overflow: hidden;
+height: 300px;
+background-color: #fff;
+}
+
+.poster {
+width: auto;
+height: auto;
+}
+
+.card-body-text {
+display: flex;
+height: 200px;
+width: 100%;
+flex-direction: column;
+align-items: center;
+}
+
+.card-title {
+font-size: 17px;
+margin: 5px;
+}
+
+.card-body-text span {
+font-size: 14px;
+margin-left: 5px;
+}
+
+.buttonAdd {
+display: absolute;
+text-align: center;
+font-family: 'Barlow', sans-serif;
+font-weight: 500;
+font-size: 20px;
+margin-bottom: 10px;
+margin-top: 15px;
+border-radius: 20px;
+border: none;
+width: 200px;
+height: 40px;
+background-color: #cde745;
+}
+
+.button:hover {
+background-color: rgb(204, 204, 204);
+}
+
+.card-title, .price, .category {
+color: black;
+font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+
+}
+ /*footer Code*/
+footer {
+  display: flex;
+  background-color: #C91959;
+  height: 300px;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  height: 300px;
+  justify-content: center;
+  /*background-color: #C91959;*/
+}
+
+.row {
+  display: flex;
+  align-items: center;  
+  flex-direction: row;
+  width: 80%;
+  /*background-color: red;*/
+}
+
+.footerTitle {
+  color: #fff;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.col-md-6, .col-md-12 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+}
+
+.col-md-12 {
+  display: flex;
+  align-items: center;
+}
+
+.footerDes {
+  color: #fff;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}

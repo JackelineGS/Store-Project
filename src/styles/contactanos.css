@@ -64,6 +64,6 @@ body {
   footer {
     display: flex;
     background-color: #1F5273;
-    height: 200px;
+    height: 300px;
     justify-content: center;
   }
