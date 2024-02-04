@@ -25,11 +25,11 @@ body {
     justify-content: center;
   }
 
-  .logoDev {
+  .imgContact {
     display: flex;
     position: relative;
     display: block;
-    width: 100px;
+    width: 30%;
     height: 90px;
     object-fit: contain;
     align-items: center;
@@ -37,7 +37,7 @@ body {
     background-size:contain;
     background-repeat: no-repeat;
     margin: 0;
-    background-image: url('../assets/firstLogo.PNG');
+    background-image: url('../assets/conversation.png');
   
   }
 
