@@ -16,14 +16,25 @@ const contactanos = (navigateTo) => {
     </div>
     </header>
     <main class='contactMain'>
-     <div class='dContact'>
-        <div class='divContactText'>
-          <h3 class='encabezadoContact'> Contáctanos </h3>
-          <p class='pregunta'>¿Tienes alguna pregunta, idea o proyecto en mente? </p>
-          <p class='pregunta_dos'> ¡Contáctanos y hagámoslo realidad juntos! </p>
-          <div class='imgContact'></div>
+    <div class='encabezadoContact'><h3 class='encabezadoContact'> CONTÁCTANOS </h3></div>
+        <div class='dContact'>
+            <div class='divContactText'>
+                <p class='pregunta'>¿Tienes alguna pregunta, idea o proyecto en mente? </p>
+                <p class='pregunta_dos'> ¡Contáctanos y hagámoslo realidad juntos! </p>
+                <div class='imgContact'></div>
+            </div>
+        <div class='formContact'>
+            <div class='formInput'>
+                <p>Envianos un mensaje</p>
+                <label> Nombre y Apellido </label>
+                <input ></input>
+                <label> Correo </label>
+                <input ></input>
+                <label> Mensaje </label>
+                <input ></input>
+                <button> Enviar Mensaje </button>
+            </div>
         </div>
-        <div class='formContact'></div>
         </div>
      </div>
     </main>

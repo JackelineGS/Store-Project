@@ -27,10 +27,8 @@ body {
 
   .imgContact {
     display: flex;
-    position: relative;
-    display: block;
-    width: 30%;
-    height: 90px;
+    width: 60%;
+    height: 60%;
     object-fit: contain;
     align-items: center;
     background-position: center;
@@ -60,6 +58,33 @@ body {
     background-color: #C91959;
     color: #fff;
   }
+
+  .dContact {
+    display: flex;
+    background-color: red;
+    height: 500px;
+  }
+
+  .divContactText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1F5273;
+    width: 50%;
+  }
+
+  .formContact {
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+  }
+
+  .formInput {
+    display: flex;
+    flex-direction: column;
+    background-color:#C91959;
+  }
+
 
   footer {
     display: flex;
